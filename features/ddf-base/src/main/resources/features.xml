@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features name="${project.artifactId}-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.3.0 http://karaf.apache.org/xmlns/features/v1.3.0">
+
+  <repository>mvn:org.codice.ddf/kernel/${ddf.version}/xml/features</repository>
+  <repository>mvn:ddf.platform/platform-app/${ddf.version}/xml/features</repository>
+  <repository>mvn:ddf.security/security-services-app/${ddf.version}/xml/features</repository>
+
+  <feature name="${project.artifactId}" version="${project.version}"
+    	description="DDF Base Features">
+      <!-- <feature>wrap</feature>
+      <feature>aries-blueprint</feature>
+      <feature>shell</feature>
+      <feature>shell-compat</feature>
+      <feature>feature</feature>
+      <feature>jaas</feature>
+      <feature>ssh</feature>
+      <feature>management</feature>
+      <feature>bundle</feature>
+      <feature>config</feature>
+      <feature>deployer</feature>
+      <feature>diagnostic</feature>
+      <feature>feature</feature>
+      <feature>instance</feature>
+      <feature>kar</feature>
+      <feature>log</feature>
+      <feature>package</feature>
+      <feature>service</feature>
+      <feature>system</feature>
+      <feature>eventadmin</feature>
+      <feature>wrapper</feature> -->
+      <feature>kernel</feature>
+      <feature>platform-app</feature>
+      <feature>security-services-app</feature>
+    </feature>
+</features>
