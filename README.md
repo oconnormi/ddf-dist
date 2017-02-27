@@ -21,9 +21,9 @@ Additional goals include:
 
 ## Tasks
 
-- [] Create standard distribution
-- [] Create minimal distribution
-- [] create enterprise distribution
-- [] create dev distribution/feature repo
-- [] migrate to editing karaf prop files
-- [] verify features install correctly (some dependencies fail to resolve currently)
+- [ ] Create standard distribution
+- [ ] Create minimal distribution
+- [ ] create enterprise distribution
+- [ ] create dev distribution/feature repo
+- [ ] migrate to editing karaf prop files
+- [ ] verify features install correctly (some dependencies fail to resolve currently)
