@@ -11,7 +11,7 @@
 
   <groupId>ddf.assemblies.features</groupId>
   <artifactId>ddf-standard</artifactId>
-  <packaging>pom</packaging>
+  <packaging>feature</packaging>
   <name>DDF :: Assemblies :: Features :: DDF Standard Feature</name>
 
   <dependencies>
@@ -65,4 +65,14 @@
       <type>xml</type>
     </dependency>
     </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>karaf-maven-plugin</artifactId>
+        </plugin>
+      </plugins>
+    </build>
+    
 </project>

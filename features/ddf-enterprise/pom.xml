@@ -11,7 +11,7 @@
 
   <groupId>ddf.assemblies.features</groupId>
   <artifactId>ddf-enterprise</artifactId>
-  <packaging>pom</packaging>
+  <packaging>feature</packaging>
   <name>DDF :: Assemblies :: Features :: DDF Enterprise Feature</name>
   <dependencies>
     <dependency>
@@ -36,5 +36,14 @@
       <type>xml</type>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
