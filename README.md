@@ -27,3 +27,5 @@ Additional goals include:
 - [ ] create dev distribution/feature repo
 - [ ] migrate to editing karaf prop files
 - [ ] verify features install correctly (some dependencies fail to resolve currently)
+- [ ] include libraries in lib directory
+  - [ ] add support to `karaf-maven-plugin` to include `endorsedLibraries`, `extLibraries`, etc (only supports the lib root directory currently)

@@ -53,6 +53,21 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk15on</artifactId>
+      <version>${bouncy.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcmail-jdk15on</artifactId>
+      <version>${bouncy.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcpkix-jdk15on</artifactId>
+      <version>${bouncy.version}</version>
+    </dependency>
+    <dependency>
       <groupId>ddf.assemblies.features</groupId>
       <artifactId>ddf-base</artifactId>
       <version>${project.version}</version>
@@ -100,11 +115,16 @@
             <feature>eventadmin</feature>
           </startupFeatures>
           <bootFeatures>
-            <feature>standard</feature>
+            <feature>kernel</feature>
           </bootFeatures>
           <installedFeatures>
             <feature>ddf-base</feature>
           </installedFeatures>
+          <libraries>
+            <library>mvn:org.bouncycastle/bcprov-jdk15on/${bouncy.version}</library>
+            <library>mvn:org.bouncycastle/bcmail-jdk15on/${bouncy.version}</library>
+            <library>mvn:org.bouncycastle/bcpkix-jdk15on/${bouncy.version}</library>
+          </libraries>
         </configuration>
       </plugin>
     </plugins>
