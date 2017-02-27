@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features name="${project.artifactId}-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.3.0 http://karaf.apache.org/xmlns/features/v1.3.0">
+
+  <repository>mvn:ddf.assemblies.features/ddf-standard/${ddf.version}/xml/features</repository>
+  <repository>mvn:org.codice.opendj.embedded/opendj-embedded-app/${opendj-embedded.app.version}/xml/features</repository>
+  <repository>mvn:org.codice.ddf.spatial/geowebcache-app/${ddf.version}/xml/features</repository>
+  <repository>mvn:org.codice.ddf.resourcemanagement/resourcemanagement-app/${ddf.version}/xml/features</repository>
+
+  <feature name="${project.artifactId}" version="${project.version}"
+  	description="DDF Standard Features">
+    <feature>ddf-standard</feature>
+    <feature>opendj-embedded-app</feature>
+    <feature>geowebcache-app</feature>
+    <feature>resourcemanagement-app</feature>
+</features>

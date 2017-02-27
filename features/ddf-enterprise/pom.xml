@@ -13,5 +13,28 @@
   <artifactId>ddf-enterprise</artifactId>
   <packaging>pom</packaging>
   <name>DDF :: Assemblies :: Features :: DDF Enterprise Feature</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.codice.opendj.embedded</groupId>
+      <artifactId>opendj-embedded-app</artifactId>
+      <version>${opendj-embedded.app.version}</version>
+      <classifier>features</classifier>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>org.codice.ddf.spatial</groupId>
+      <artifactId>geowebcache-app</artifactId>
+      <version>${ddf.version}</version>
+      <classifier>features</classifier>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>org.codice.ddf.resourcemanagement</groupId>
+      <artifactId>resourcemanagement-app</artifactId>
+      <version>${ddf.version}</version>
+      <classifier>features</classifier>
+      <type>xml</type>
+    </dependency>
+  </dependencies>
 
 </project>

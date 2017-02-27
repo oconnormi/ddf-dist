@@ -61,8 +61,38 @@
     </dependency>
   </dependencies>
 
+  <resources>
+    <resource>
+      <directory>src/main/resources</directory>
+      <filtering>false</filtering>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </resource>
+    <resource>
+        <directory>src/main/filtered-resources</directory>
+        <filtering>true</filtering>
+        <includes>
+            <include>**/*</include>
+        </includes>
+    </resource>
+  </resources>
+
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <id>process-resources</id>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+          </execution>
+        </executions>
+    </plugin>
       <plugin>
         <groupId>org.apache.karaf.tooling</groupId>
         <artifactId>karaf-maven-plugin</artifactId>
@@ -72,27 +102,6 @@
           </startupFeatures>
           <bootFeatures>
             <feature>standard</feature>
-            <!-- <feature>ddf-base</feature> -->
-            <!-- <feature>standard</feature>
-            <feature>enterprise</feature>
-            <feature>instance</feature>
-            <feature>package</feature>
-            <feature>log</feature>
-            <feature>ssh</feature>
-            <feature>aries-blueprint</feature>
-            <feature>system</feature>
-            <feature>feature</feature>
-            <feature>shell</feature>
-            <feature>management</feature>
-            <feature>service</feature>
-            <feature>jaas</feature>
-            <feature>diagnostic</feature>
-            <feature>bundle</feature>
-            <feature>config</feature>
-            <feature>kar</feature>
-            <feature>service</feature>
-            <feature>framework</feature>
-            <feature>ddf-base</feature> -->
           </bootFeatures>
           <installedFeatures>
             <feature>ddf-base</feature>

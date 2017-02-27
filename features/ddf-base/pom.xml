@@ -36,6 +36,13 @@
         <classifier>features</classifier>
         <type>xml</type>
     </dependency>
+    <dependency>
+        <groupId>ddf.admin</groupId>
+        <artifactId>admin-app</artifactId>
+        <version>${ddf.version}</version>
+        <classifier>features</classifier>
+        <type>xml</type>
+    </dependency>
   </dependencies>
 
   <build>
