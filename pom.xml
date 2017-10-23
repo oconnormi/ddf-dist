@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * ADD LICENSE HERE
+ *
+ **/
+-->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -17,6 +23,11 @@
 
   <properties>
     <karaf.version>4.0.7</karaf.version>
+    <servicemix.specs.version>2.7.0</servicemix.specs.version>
+    <jna.version>4.2.2</jna.version>
+    <xerces.version>2.11.0</xerces.version>
+    <xalan.bundle.version>2.7.2_3</xalan.bundle.version>
+    <xalan-serializer.bundle.version>2.7.2_1</xalan-serializer.bundle.version>
     <ddf.version>2.10.0</ddf.version>
     <bouncy.version>1.54</bouncy.version>
     <opendj-embedded.app.version>1.3.3</opendj-embedded.app.version>

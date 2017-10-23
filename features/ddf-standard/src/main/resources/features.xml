@@ -11,7 +11,7 @@
 
   <feature name="${project.artifactId}" version="${project.version}"
   	description="DDF Standard Features">
-    <feature>ddf-base</feature>
+    <!-- <feature>ddf-base</feature> -->
     <feature>catalog-app</feature>
     <feature>solr-app</feature>
     <feature>spatial-app</feature>

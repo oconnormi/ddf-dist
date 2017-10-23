@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * ADD LICENSE HERE
+ *
+ **/
+-->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -15,13 +21,6 @@
   <name>DDF :: Assemblies :: Features :: DDF Standard Feature</name>
 
   <dependencies>
-    <dependency>
-      <groupId>ddf.assemblies.features</groupId>
-      <artifactId>ddf-base</artifactId>
-      <version>${project.version}</version>
-      <classifier>features</classifier>
-      <type>features</type>
-    </dependency>
     <dependency>
       <groupId>ddf.catalog</groupId>
       <artifactId>catalog-app</artifactId>
@@ -74,5 +73,5 @@
         </plugin>
       </plugins>
     </build>
-    
+
 </project>
